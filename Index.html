@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoyga - Geeska ganacsigeyga</title>
+
+  <style>
+    /* 1. Universal Selector: Nooca farta bogga oo dhan (Requirement 11) */
+    * { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0;
+    }
+
+    /* 2. ID Selector: Magaca Ganacsiga oo xirfadaysan (Requirement 12) */
+    #logo { 
+      color: darkred; /* Color Name (Requirement 15) */
+      text-align: center; /* Text Align (Requirement 17) */
+      padding: 20px;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    /* 3. Descendant Selector: Style-ka link-yada Nav-ka (Requirement 14) */
+    nav { 
+      background-color: blue; /* Color Name (Requirement 15) */
+      padding: 15px; 
+      text-align: center; 
+    }
+    nav ul li a { 
+      color: white; 
+      text-decoration: none; 
+      margin: 0 15px;
+      font-weight: bold; /* Font Style (Requirement 18) */
+    }
+
+    /* 4. Class Selector: Qaybta dhimista gaarka ah (Requirement 13) */
+    .special-offer { 
+      background-color: yellow; /* Hex: #ffff00 */
+      padding: 10px;
+      margin: 15px 0;
+      border-left: 5px solid red;
+    }
+
+    /* 5. Float & RGBA: Sanduuqa saacadaha (Requirement 15, 19) */
+    .hours-panel { 
+      float: right; 
+      background-color: rgba(0, 0, 0, 0.5); /* Transparency (Requirement 15) */
+      color: white;
+      padding: 15px;
+      width: 220px;
+      margin: 10px;
+    }
+
+    /* 6. HSL: Qaybta ugu hooseysa (Requirement 16) */
+    footer { 
+      background-color: hsl(195, 53%, 40%); 
+      color: white;
+      text-align: center;
+      padding: 20px;
+      clear: both; /* Inaanu float-ku soo dhex galin */
+    }
+
+    /* CSS Comment: Habaynta qurxinta bogga (Requirement 21) */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 id="logo">dhinaca ganacsigeyga</h1> </header>
+
+  <nav>
+    <ul> <li style="display:inline;"><a href="index.html">Home</a></li> <li style="display:inline;"><a href="menu.html">Services</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hours-panel"> <h3>Opening Hours</h3>
+      <p>Mon - Sun: 8AM - 10PM</p>
+    </div>
+
+    <div> <h2>kusoo dhawow ganacsikeyga cusub</h2>
+      <div class="special-offer"> <p style="font-style: italic;">waa ganacsiga ugu fiican magaladan</p> </div>
+    </div>
+
+    <h3 style="margin-top: 20px;">Top 3 Services</h3>
+    <ol> <li>latalinta ganacsiga</li>
+      <li>diyaarinta shirkadaha</li>
+      <li>qorsheynta ganacsiga</li>
+    </ol>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 Geeska Business</p>
+  </footer>
+</body>
+</html>
